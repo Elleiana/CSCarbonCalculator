@@ -700,7 +700,7 @@ const businessQuestions = [
 // Tips keyed by question id + selected option index (0=low, 1=mid, 2=high impact)
 const personalTips = {
   transport: [
-    null, // walk/cycle — great already
+    null, // walk/cycle - great already
     { icon: '🚲', title: 'Keep it up!', text: 'Public transport is one of the best choices. For local errands, consider cycling or borrowing a cargo bike.' },
     { icon: '🚗', title: 'Cut your car carbon', text: 'Consider sharing journeys locally, switching to an EV, or using Devon\'s bus network for short trips.' },
     { icon: '⚡', title: 'Great EV choice!', text: 'You\'re already on a lower-carbon path. Make sure you\'re charging on a green energy tariff to reduce your footprint further.', link: null },
@@ -708,7 +708,7 @@ const personalTips = {
   flights: [
     null,
     { icon: '🚂', title: 'Go rail next time', text: 'Rail travel emits up to 80% less CO₂ than flying. Eurostar and UK trains cover many routes perfectly well.', link: null },
-    { icon: '🌍', title: 'Consider slow travel', text: 'One long-haul flight can wipe out months of other savings. Explore UK-based breaks — Devon has plenty to offer!', link: 'https://www.circularsocial.co.uk/community' },
+    { icon: '🌍', title: 'Consider slow travel', text: 'One long-haul flight can wipe out months of other savings. Explore UK-based breaks - Devon has plenty to offer!', link: 'https://www.circularsocial.co.uk/community' },
     { icon: '✈️', title: 'Your flights are your biggest impact', text: 'Reducing flights is the single highest-impact change you can make. Offset where you must, but reducing is always better.', link: null },
   ],
   home: [
@@ -746,7 +746,7 @@ const businessTips = {
   ],
   supply: [
     null,
-    { icon: '🌿', title: 'UK-sourced is a strong choice', text: 'Consider profiling your suppliers\' own sustainability credentials — it\'s increasingly important to clients and customers.', link: null },
+    { icon: '🌿', title: 'UK-sourced is a strong choice', text: 'Consider profiling your suppliers\' own sustainability credentials - it\'s increasingly important to clients and customers.', link: null },
     { icon: '🗺️', title: 'Source more locally', text: 'Devon has a thriving community of local makers and suppliers. The Circular Social network could help you find sustainable local partners.', link: 'https://www.circularsocial.co.uk/community' },
     { icon: '🌍', title: 'Global supply chains carry a high footprint', text: 'Auditing and mapping your supply chain is the first step. Look for UK or EU alternatives where possible.', link: 'https://www.circularsocial.co.uk/community' },
   ],
@@ -758,9 +758,9 @@ const businessTips = {
   ],
   digital: [
     null,
-    { icon: '📱', title: 'Digital is great — go further', text: 'Consider green web hosting for your website. The internet accounts for around 3.7% of global emissions.', link: null },
+    { icon: '📱', title: 'Digital is great - go further', text: 'Consider green web hosting for your website. The internet accounts for around 3.7% of global emissions.', link: null },
     { icon: '📧', title: 'Reduce print where possible', text: 'Email and social media campaigns produce a fraction of the footprint of print. Consider digital-first marketing.', link: 'https://www.circularsocial.co.uk/community' },
-    { icon: '🖨️', title: 'Print has a real carbon cost', text: 'Shifting more of your marketing online — and joining communities like Circular Social for word-of-mouth reach — can reduce this significantly.', link: 'https://www.circularsocial.co.uk/join-the-community' },
+    { icon: '🖨️', title: 'Print has a real carbon cost', text: 'Shifting more of your marketing online - and joining communities like Circular Social for word-of-mouth reach - can reduce this significantly.', link: 'https://www.circularsocial.co.uk/join-the-community' },
   ],
 };
 
@@ -924,7 +924,7 @@ function showResults() {
     if (!ans) return;
     const tipArr = tipsData[q.id];
     if (!tipArr) return;
-    // pick tip based on index — 0 = no tip (best choice), otherwise scale to available
+    // pick tip based on index - 0 = no tip (best choice), otherwise scale to available
     let tipIdx = ans.optionIndex;
     const tip = tipArr[tipIdx];
     if (tip) relevantTips.push(tip);
@@ -953,7 +953,7 @@ function showResults() {
         ${tip.link ? `<a href="${tip.link}" class="tip-link" target="_blank">Explore the Circular Social community →</a>` : ''}
       </div>
     </div>
-  `).join('') : '<p style="color:var(--muted);font-size:0.85rem;">Great choices all round — you\'re already walking the walk! 🌿</p>';
+  `).join('') : '<p style="color:var(--muted);font-size:0.85rem;">Great choices all round - you\'re already walking the walk! 🌿</p>';
 
   // Show
   document.getElementById('stepsContainer').style.display = 'none';
